@@ -1,0 +1,32 @@
+.alert {
+	background: $orange;
+	color: $white;
+	line-height: 1.4;
+	letter-spacing: .2px;
+	padding: 2rem 0;
+
+	@media (min-width: $tablet) {
+		font-size: 2rem;
+		padding: 3rem 0;
+	}
+
+	&:after {
+		@include clearfix;
+	}
+
+	&__msg {
+		margin: 0 0 1.5rem;
+
+		@media (min-width: $tablet) {
+			float: left;
+			margin: 0;
+			width: 70%
+		}
+	}
+
+	&__btn {
+		@media (min-width: $tablet) {
+			float: right;
+		}
+	}
+}

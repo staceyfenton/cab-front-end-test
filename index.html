@@ -1,0 +1,159 @@
+<!doctype html>
+<!--[if IE 9]><html class="no-js ie-9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Citizens Advice Front End Test</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="/assets/css/styles.css">
+	<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+	<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="manifest.json">
+	<link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+	<svg class="svg-sprite" version="1.1" xmlns="http://www.w3.org/2000/svg">
+		<defs>
+			<g id="fb-icon-circle" transform="translate(-676, -72)">
+				<g id="fb-icon">
+					<path d="M690.02,84 L688.72,84 L688.72,88.69 L686.78,88.69 L686.78,84 L685.81,84 L685.81,82.38 L686.78,82.38 L686.78,81.41 C686.78,80.1 687.33,79.31 688.88,79.31 L690.18,79.31 L690.18,80.93 L689.37,80.93 C688.76,80.93 688.72,81.15 688.72,81.57 L688.72,82.38 L690.19,82.38 L690.02,84 L690.02,84 Z M688,72 C681.37,72 676,77.37 676,84 C676,90.63 681.37,96 688,96 C694.63,96 700,90.63 700,84 C700,77.37 694.63,72 688,72 L688,72 Z"></path>
+				</g>
+			</g>
+
+			<g id="twitter-icon-circle" transform="translate(-710, -72)">
+				<g id="twitter-icon">
+					<path d="M726.48,81.9 L726.49,82.17 C726.49,84.96 724.36,88.18 720.48,88.18 C719.29,88.18 718.18,87.83 717.24,87.23 C717.41,87.25 717.58,87.26 717.75,87.26 C718.74,87.26 719.65,86.93 720.37,86.36 C719.44,86.34 718.67,85.73 718.4,84.89 C718.53,84.92 718.66,84.93 718.79,84.93 C718.99,84.93 719.17,84.9 719.35,84.86 C718.38,84.66 717.66,83.81 717.66,82.79 L717.66,82.76 C717.94,82.92 718.27,83.01 718.61,83.02 C718.05,82.64 717.67,82 717.67,81.27 C717.67,80.88 717.78,80.52 717.96,80.2 C719,81.48 720.56,82.32 722.31,82.41 C722.28,82.26 722.26,82.09 722.26,81.93 C722.26,80.76 723.2,79.82 724.37,79.82 C724.98,79.82 725.52,80.07 725.91,80.48 C726.39,80.39 726.84,80.21 727.25,79.97 C727.09,80.47 726.76,80.88 726.32,81.14 C726.75,81.09 727.16,80.98 727.53,80.81 C727.25,81.23 726.89,81.6 726.48,81.9 L726.48,81.9 Z M722,72 C715.37,72 710,77.37 710,84 C710,90.63 715.37,96 722,96 C728.63,96 734,90.63 734,84 C734,77.37 728.63,72 722,72 L722,72 Z"></path>
+				</g>
+			</g>
+
+			<g id="dribbble-icon-circle" transform="translate(-744, -72)">
+				<g id="dribbble-icon">
+					<path d="M756.3,84.91 C756.45,84.84 756.65,84.79 756.88,84.74 C757.07,85.26 757.24,85.81 757.39,86.37 C757.62,87.25 757.78,88.11 757.88,88.96 C757.29,89.18 756.66,89.31 756,89.31 C754.77,89.31 753.65,88.89 752.75,88.19 C753.45,86.79 754.71,85.63 756.3,84.91 L756.3,84.91 Z M756.18,83.05 C756.31,83.31 756.43,83.58 756.54,83.86 C756.36,83.9 756.2,83.95 756.07,84 C754.24,84.77 752.8,86.01 752.02,87.5 C751.2,86.57 750.69,85.34 750.69,84 L750.7,83.75 C751,83.76 751.31,83.77 751.62,83.76 C753.29,83.74 754.85,83.48 756.18,83.05 L756.18,83.05 Z M751.68,82.72 C751.4,82.72 751.13,82.71 750.86,82.69 C751.24,81.2 752.25,79.96 753.6,79.27 C754.37,80.03 755.09,81.01 755.71,82.14 C754.52,82.51 753.14,82.72 751.68,82.72 L751.68,82.72 Z M756.78,81.76 C756.16,80.62 755.45,79.64 754.69,78.86 C755.11,78.76 755.55,78.69 756,78.69 C757.29,78.69 758.47,79.15 759.39,79.92 C758.81,80.65 757.91,81.28 756.78,81.76 L756.78,81.76 Z M757.67,83.69 C757.53,83.34 757.39,82.99 757.23,82.66 C758.5,82.11 759.48,81.39 760.04,80.57 C760.76,81.41 761.21,82.48 761.29,83.65 C760.14,83.59 758.77,83.59 757.67,83.69 L757.67,83.69 Z M758.87,88.46 C758.77,87.61 758.61,86.73 758.37,85.84 C758.26,85.41 758.13,85 757.99,84.59 C759.03,84.5 760.28,84.51 761.27,84.59 C761.09,86.21 760.18,87.62 758.87,88.46 L758.87,88.46 Z M756,77.63 C752.48,77.63 749.63,80.48 749.63,84 C749.63,87.52 752.48,90.37 756,90.37 C759.52,90.37 762.37,87.52 762.37,84 C762.37,80.48 759.52,77.63 756,77.63 L756,77.63 Z M756,96 C749.37,96 744,90.63 744,84 C744,77.37 749.37,72 756,72 C762.63,72 768,77.37 768,84 C768,90.63 762.63,96 756,96 L756,96 Z"></path>
+				</g>
+			</g>
+
+			<g id="burger-icon" transform="translate(-1079, -36)">
+				<g id="menu-icon" transform="translate(1058, 20)">
+					<path d="M42,16 L21,16 L21,18 L42,18 L42,16 Z M42,32 L21,32 L21,34 L42,34 L42,32 Z M42,24 L21,24 L21,26 L42,26 L42,24 Z"></path>
+				</g>
+			</g>
+		</defs>
+	</svg>
+
+	<div class="site-container">
+		<header class="site-header">
+			<nav>
+				<ul class="site-header__nav-list">
+					<li class="site-header__nav-list-item"><a href="#" class="site-header__nav-list-link">Product</a></li>
+					<li class="site-header__nav-list-item"><a href="#" class="site-header__nav-list-link">About</a></li>
+					<li class="site-header__nav-list-item"><a href="#" class="site-header__nav-list-link">Portfolio</a></li>
+					<li class="site-header__nav-list-item"><a href="#" class="site-header__nav-list-link">Team</a></li>
+					<li class="site-header__nav-list-item"><a href="#" class="site-header__nav-list-link">Contact</a></li>
+				</ul>
+			</nav>
+			<a href="#" class="site-header__menu-btn">
+				<svg viewBox="0 0 24 24" class="site-header__menu-icon">
+					<use xlink:href="#burger-icon"></use>
+				</svg>
+				Menu
+			</a>
+		</header>
+		<main>
+			<div class="site-feature">
+				<div class="content-wrapper">
+					<h1><img src="/assets/img/basement-logotype.svg" alt="" class="site-feature__logo"> Basement</h1>
+				</div>
+			</div>
+
+			<div class="alert">
+				<div class="alert__wrapper content-wrapper">
+					<p class="alert__msg">Nam elementum rutrum ipsum sit amet luctus. Sed libero turpis, eleifend in quam sed, vestibulum vulputate ante.</p>
+					<a href="#" class="alert__btn button">More info</a>
+				</div>
+			</div>
+
+			<article class="primary-content content-wrapper">
+				<h2 class="primary-content__headline">Etiam nisl dui, ultricies quis turpis quis, dapibus finibus tortor</h2>
+
+				<aside class="primary-content__quote-wrapper">
+					<h3 class="primary-content__quote-title">Fantastic service, i’m exited!</h3>
+					<blockquote class="primary-content__quote">
+						<p>Pellentesque porttitor urna a nisi sodales, ac condimentum mauris auctor. In efficitur velit ut eros porttitor eleifend. In tempor diam at urna finibus, vitae lobortis sem tincidunt. </p>
+						<footer class="primary-content__quote-footer">
+							<cite class="primary-content__quote-cite">James Counter</cite>
+							<p>
+								Citizens Advice<br />
+								Lead Front End UX Developer
+							</p>
+						</footer>
+					</blockquote>
+				</aside>
+
+				<div class="primary-content__main">
+					<h3>Ut sit amet scelerisque ex, sit amet mattis sapien</h3>
+					<p>Mauris eu finibus diam. Quisque accumsan aliquet dictum. Aenean interdum tortor vitae elit elementum, et interdum tortor imperdiet. Duis sed justo ultrices, aliquam nisi sit amet, interdum justo. </p>
+					<p>Mauris eu finibus diam. Quisque accumsan aliquet dictum. Aenean interdum tortor vitae elit elementum, et interdum tortor imperdiet. Duis sed justo ultrices, aliquam nisi sit amet, interdum justo. </p>
+					<h3>Ut sit amet scelerisque ex, sit amet mattis sapien. Proin convallis libero porta, mattis quam vitae</h3>
+					<p>Pellentesque porttitor urna a nisi sodales, ac condimentum mauris auctor. In efficitur velit ut eros porttitor eleifend. In tempor diam at urna finibus, vitae lobortis sem tincidunt. Donec ac elementum orci. </p>
+				</div>
+			</article>
+		</main>
+
+		<footer class="site-footer">
+			<div class="content-wrapper">
+				<img class="site-footer__logo" src="/assets/img/logo.svg" alt="Basement">
+
+				<div class="site-footer__col">
+					<h2 class="site-footer__title">Product</h2>
+					<ul class="site-footer__list">
+						<li class="site-footer__list-item"><a href="#" class="site-footer__link">Features</a></li>
+						<li class="site-footer__list-item"><a href="#" class="site-footer__link">Promo</a></li>
+						<li class="site-footer__list-item"><a href="#" class="site-footer__link">Download</a></li>
+					</ul>
+				</div>
+
+				<div class="site-footer__col">
+					<h2 class="site-footer__title">Contact</h2>
+					<ul class="site-footer__list">
+						<li class="site-footer__list-item"><a href="#" class="site-footer__link">Find us</a></li>
+						<li class="site-footer__list-item"><a href="#" class="site-footer__link">FAQ</a></li>
+						<li class="site-footer__list-item"><a href="#" class="site-footer__link">Help</a></li>
+					</ul>
+				</div>
+
+				<div class="site-footer__col site-footer__col--last">
+					<h2 class="site-footer__title">Follow us</h2>
+					<ul class="site-footer__list site-footer__icon-list">
+						<li class="site-footer__icon-list-item">
+							<a href="#" class="site-footer__link" aria-label="Facebook">
+								<svg viewBox="0 0 24 24" class="site-footer__icon">
+									<use xlink:href="#fb-icon-circle"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="site-footer__icon-list-item">
+							<a href="#" class="site-footer__link" aria-label="Twitter">
+								<svg viewBox="0 0 24 24" class="site-footer__icon">
+									<use xlink:href="#twitter-icon-circle"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="site-footer__icon-list-item">
+							<a href="#" class="site-footer__link" aria-label="Dribbble">
+								<svg viewBox="0 0 24 24" class="site-footer__icon">
+									<use xlink:href="#dribbble-icon-circle"></use>
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>

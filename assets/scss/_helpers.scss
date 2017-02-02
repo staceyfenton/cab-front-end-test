@@ -1,0 +1,38 @@
+.svg-sprite {
+	display: none;
+}
+
+.content-wrapper {
+	margin: 0 auto;
+	max-width: 100rem;
+	padding: 0 2rem;
+
+	@media (min-width: $tablet) {
+		padding: 0 3rem;
+	}
+}
+
+.button {
+	background: $white;
+	border: 2px solid transparent;
+	border-radius: 4rem;
+	color: $medium-grey;
+	display: inline-block;
+	font-size: 1rem;
+	letter-spacing: 2px;
+	padding: 1.6rem 5.3rem;
+	text-align: center;
+	text-transform: uppercase;
+
+	&:hover {
+		background: $orange;
+		border-color: white;
+		color: $white;
+	}
+}
+
+@mixin clearfix {
+	clear: both;
+	content: '';
+	display: table;
+}

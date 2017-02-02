@@ -1,0 +1,35 @@
+.site-feature {
+	align-items: center;
+	background: $dark-grey url('/assets/img/gradient.svg') no-repeat;
+	background-size: cover;
+	// background-image: radial-gradient(circle at 11% 11%, #585858, $dark-grey);
+	min-height: 35rem;
+	display: flex;
+	justify-content: center;
+
+	@media (min-width: $tablet) {
+		min-height: 60rem;
+	}
+
+	h1 {
+		color: $white;
+		font-size: 3rem;
+		font-weight: bold;
+		letter-spacing: 4px;
+		text-transform: uppercase;
+
+		@media (min-width: $tablet) {
+			font-size: 7.2rem;
+			letter-spacing: 6px;
+		}
+	}
+
+	&__logo {
+		vertical-align: middle;
+		width: 40px;
+
+		@media (min-width: $tablet) {
+			width: auto;
+		}
+	}
+}

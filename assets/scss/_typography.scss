@@ -1,0 +1,28 @@
+html {
+	font-size: 62.5%;
+}
+
+body {
+	background: $white;
+	color: $body-text;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.8rem;
+	letter-spacing: .3px;
+	line-height: 1.39;
+}
+
+h3 {
+	color: $medium-grey;
+	font-size: 2.4rem;
+	font-weight: normal;
+	margin: 0 0 1.5rem;
+}
+
+p {
+	margin: 0 0 1.6em;
+}
+
+a {
+	text-decoration: none;
+	transition: all .25s;
+}

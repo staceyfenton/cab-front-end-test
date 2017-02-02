@@ -1,0 +1,28 @@
+/* 
+	I like to declare all colours as variables 
+	to prevent repition and make it easy to update
+	in futre. This design uses some colours which are almost
+	identical (eg #b1b1b1 and #b2b2b2). I have used the 
+	colours as per the design but would recommend consolidating
+	them. I'd also recommend a darker colour for body text as
+	contrast is not strong enough on a white background.
+*/
+
+$dark-grey: #333;
+$medium-grey: #515356;
+$light-grey: #f5f5f5;
+$orange: #ff6008;
+$white: #fff;
+$black: #000;
+
+$menu: #ff5e1b;
+$body-text: #b1b1b1; 
+$footer-links: #b2b2b2;
+$icon-bg: #cbcbcb;
+
+// #ff5d1a
+
+
+/* breakpoints */
+$desktop: 1024px;
+$tablet: 730px;

@@ -1,0 +1,107 @@
+.site-footer {
+	padding: 2rem 0 1rem;
+	font-size: 1.5rem;
+	position: relative;
+
+	@media (min-width: $tablet) {
+		font-size: 1.2rem;
+		padding: 4rem 0;
+	}
+
+	&:after {
+		@include clearfix;
+	}
+
+	&__logo {
+		display: block;
+		margin: 0 0 3rem;
+
+		@media (min-width: $tablet) {
+			float: left;
+			margin: 0 11rem 0 0;
+		}
+	}
+
+	&__col {
+		float: left;
+		width: 50%;
+
+		@media (min-width: $tablet) {
+			margin-right: 11.5rem;
+			width: auto;
+		}
+	}
+
+	&__col--last {
+		clear: left;
+		float: none;
+		margin-right: 0;
+		width: 100%;
+
+		@media (min-width: $tablet) {
+			clear: none;
+			float: left;
+			width: auto;
+		}
+	}
+
+	&__list {
+		list-style: none;
+		margin: 0 0 3rem;
+		padding: 0;
+
+		@media (min-width: $tablet) {
+			margin: 0;
+		}
+	}
+
+	&__list-item {
+		margin: 0 0 .6rem;
+	}
+
+	&__icon-list-item {
+		display: inline-block;
+		margin-right: 1rem;
+		
+		@media (min-width: $tablet) {
+			margin-right: .6rem;
+		}
+	}
+
+	&__icon {
+		fill: $icon-bg;
+		height: 36px;
+		transition: fill .25s;
+		width: 36px;
+
+		@media (min-width: $tablet) {
+			height: 24px;
+			width: 24px;
+		}
+	}
+
+	&__link {
+		color: $footer-links;
+
+		&:hover {
+			color: $orange;
+
+			.site-footer__icon {
+				fill: $orange;
+			}
+		}
+	}
+
+	&__title {
+		color: $medium-grey;
+		font-size: 1.4rem;
+		font-weight: normal;
+		margin: 0 0 1em;
+		text-transform: uppercase;
+
+		@media (min-width: $tablet) {
+			font-size: 1rem;
+			margin: 0 0 1.6em;
+		}
+	}
+}
