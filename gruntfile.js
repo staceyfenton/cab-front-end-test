@@ -35,12 +35,38 @@ module.exports = function(grunt) {
       }
     },
 
+    // Browserify (for bundling JS and compiling to ES2015)
+    browserify: {
+      dist: {
+        options: {
+          transform: [
+            ['babelify', {
+              presets: ['es2015']
+            }]
+          ]
+        },
+        files: {
+          'assets/js/dist/scripts.js' : 'assets/js/scripts.js'
+        }
+      }
+    },
+
+    //Minify the JavaScript
+    uglify: {
+      scripts: {
+        files: {
+          'assets/js/dist/scripts.js' : ['assets/js/dist/scripts.js']
+        }
+      }
+    },
+
     // open the server
     browserSync: {
       bsFiles: {
         src : [
           'assets/css/*.css',
-          '*.html'
+          '*.html',
+          '/assets/js/*.js'
         ]
       },
       options: {
@@ -55,13 +81,24 @@ module.exports = function(grunt) {
         files: 'assets/scss/**/*.scss',
         tasks: ['sass:build', 'autoprefixer']
       },
+
+      scripts: {
+        files: ['assets/js/scripts.js'],
+        tasks: ['browserify']
+      }
     },
   });
 
   grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-autoprefixer');
+  grunt.loadNpmTasks('grunt-browserify');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-browser-sync');
 
-  grunt.registerTask('default', ['sass:build', 'autoprefixer', 'browserSync', 'watch']);
+  // dev mode: uncompressed files 
+  grunt.registerTask('default', ['sass:build', 'autoprefixer', 'browserify', 'browserSync', 'watch']);
+  
+  // production ready: minified files
+  grunt.registerTask('dist', ['sass:dist', 'autoprefixer', 'browserify', 'uglify']);
 };

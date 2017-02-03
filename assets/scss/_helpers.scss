@@ -2,6 +2,11 @@
 	display: none;
 }
 
+.site-container {
+	overflow: hidden;
+	position: relative;
+}
+
 .content-wrapper {
 	margin: 0 auto;
 	max-width: 100rem;

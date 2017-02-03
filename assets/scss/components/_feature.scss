@@ -1,17 +1,18 @@
 .site-feature {
 	align-items: center;
-	background: $dark-grey url('/assets/img/gradient.svg') no-repeat;
+	background: $dark-grey url('../img/gradient.svg') no-repeat; // used svg for better IE9 support and less gradient banding
 	background-size: cover;
 	// background-image: radial-gradient(circle at 11% 11%, #585858, $dark-grey);
-	min-height: 35rem;
 	display: flex;
-	justify-content: center;
+	justify-content: space-around;
+	height: 35rem;
+	position: relative;
 
 	@media (min-width: $tablet) {
-		min-height: 60rem;
+		height: 60rem;
 	}
 
-	h1 {
+	&__heading {
 		color: $white;
 		font-size: 3rem;
 		font-weight: bold;
@@ -22,11 +23,24 @@
 			font-size: 7.2rem;
 			letter-spacing: 6px;
 		}
+
+		/* fallback for IE9, doesn't support flexbox */
+		.ie-9 & {
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+			z-index: 1;
+
+			@media (min-width: $tablet) {
+				min-width: 540px;
+			}
+		}
 	}
 
 	&__logo {
 		vertical-align: middle;
-		width: 40px;
+		width: 4rem;
 
 		@media (min-width: $tablet) {
 			width: auto;

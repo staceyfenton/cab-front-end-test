@@ -70,13 +70,13 @@
 
 	&__icon {
 		fill: $icon-bg;
-		height: 36px;
+		height: 3.6rem;
 		transition: fill .25s;
-		width: 36px;
+		width: 3.6rem;
 
 		@media (min-width: $tablet) {
-			height: 24px;
-			width: 24px;
+			height: 2.4rem;
+			width: 2.4rem;
 		}
 	}
 
